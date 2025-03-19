@@ -5,10 +5,13 @@ create on March 18 2025
 
 CircuitPython Essentials Servo standard servo
 """
+
+
 import time
 import board
 import pwmio
 from adafruit_motor import servo
+
 
 # create a PWMOut object on Pin A2.
 pwm = pwmio.PWMOut(board.GP19, duty_cycle=2 ** 15, frequency=50)
